@@ -1,0 +1,46 @@
+{
+    "name": "areirei/laravel-queue-amqp",
+    "description": "AMQP driver for Laravel Queue, make by Rabbit C AMPQ client library.",
+    "type": "libary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "areirei",
+            "email": "reireia@protonmail.com"
+        }
+    ],
+    "require": {
+      "php": "^7.3|^8.0",
+      "ext-json": "*",
+      "ext-amqp": "*",
+      "illuminate/queue": "^8.0"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^9.3",
+      "mockery/mockery": "^1.0",
+      "friendsofphp/php-cs-fixer": "^2.17",
+      "orchestra/testbench": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Areirei\\LaravelQueueAMQP\\": "src/"
+        }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Areirei\\LaravelQueueAMQP\\LaravelQueueAMQPServiceProvider"
+        ]
+      }
+    },
+    "scripts": {
+        "lint": [
+            "./vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix --verbose --config=./.php-cs-fixer.dist.php --allow-risky=yes "
+        ],
+        "test": [
+            "./vendor/bin/phpunit --coverage-text --color"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
