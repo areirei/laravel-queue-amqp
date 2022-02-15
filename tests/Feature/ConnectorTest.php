@@ -2,10 +2,11 @@
 
 namespace Areirei\LaravelQueueAMQP\Tests\Feature;
 
+use Areirei\LaravelQueueAMQP\Tests\TestCase;
 use areirei\LaravelQueueAMQP\LaravelAMQPQueue;
 use AMQPConnection;
 
-class ConnectorTest extends Areirei\LaravelQueueAMQP\Tests\TestCase
+class ConnectorTest extends TestCase
 {
     public function testConnection(): void
     {

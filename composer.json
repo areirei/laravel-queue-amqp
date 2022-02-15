@@ -28,7 +28,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Areirei\\LaravelQueueAMQP\\Tests": "tests/"
+            "Areirei\\LaravelQueueAMQP\\Tests\\": "tests/"
         }
     },
     "extra": {
