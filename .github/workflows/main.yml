@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: composer update --prefer-dist --no-interaction --no-progress
 
-      - name: MeiliSearch setup with Docker
+      - name: RabbitMQ setup with Docker
         run: docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9-management
       
       - name: Execute tests
