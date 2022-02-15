@@ -26,6 +26,11 @@
             "Areirei\\LaravelQueueAMQP\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Areirei\\LaravelQueueAMQP\\Tests": "tests/"
+        }
+    },
     "extra": {
       "laravel": {
         "providers": [
